@@ -5,7 +5,7 @@ module.exports = {
     get(){
         return db('tasks')
     },
-    add(description, id){
+    add(description){
         return db('tasks')
         .insert(description)
         .join('projects', 'tasks.projects_id', 'projects.id')

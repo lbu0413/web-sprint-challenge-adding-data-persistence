@@ -16,7 +16,6 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    const { id } = req.params
     const description = req.body
     Tasks.add(description)
         .then(tasks => {

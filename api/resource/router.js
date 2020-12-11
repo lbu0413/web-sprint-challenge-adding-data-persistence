@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
     const name = req.body
     Resources.add(name)
         .then(resources => {
-            res.status(200).json(resources)
+            res.status(200).json(name)
         })
         .catch(err => {
             console.log(err)

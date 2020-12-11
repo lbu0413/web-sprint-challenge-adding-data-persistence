@@ -29,7 +29,7 @@ exports.up = function(knex) {
     table.increments('id')
     table.string('name').notNullable()
     table.text('description')
-    table.boolean('completed', false)
+    table.boolean('completed')
          .notNullable()
          .defaultTo(false)
     // table.integer('tasks_id')
