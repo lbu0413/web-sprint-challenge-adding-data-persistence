@@ -5,6 +5,9 @@ module.exports = {
     migrations: {
       directory: "./data/migrations",
     },
+    connection:{
+      filename:'./data/migrations/projects.db3'
+    },
     useNullAsDefault: true,
     pool: {
       afterCreate: (conn, done) => {
